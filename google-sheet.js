@@ -26,7 +26,7 @@ $("#foo").submit(function(event){
     request = $.ajax({
         url: "https://script.google.com/macros/s/AKfycbwm789ODrLQ_pBojkW3e3AWPWs_9vMHboOSoYsn8tPiwPsCVfs/exec",
         type: "post",
-        dataType: 'jsonp',
+        // dataType: 'jsonp',
         data: serializedData
     });
     request = jQuery.ajax(payload)
