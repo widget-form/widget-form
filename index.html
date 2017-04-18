@@ -16,14 +16,14 @@
 
     #widget_wrap {
         width: 272px;
-        height: 529px;
+        height: 360px;
         border: solid 1px #000;
     }
 
     .formWrap {
         width: 205px;
         height: 155px;
-        top: 310px;
+        /*top: 310px;*/
         left: 0;
         position: absolute;
         padding: 10px 13px 0;
@@ -148,22 +148,18 @@
   <!-- Contact Form - sent to a Google Sheet -->
   <div id="widget_wrap">
       <a href="http://www.jobberman.com.gh/" target="_blank">
-        <img src="https://widget-form.github.io/widget-form/image/widget.png" width="272"  height="340">
-        <!-- <img src="image/widget.png" width="272" height="300"> -->
-
+        <img src="https://widget-form.github.io/widget-form/image/widget.png" width="270" height="200">
+        <!-- <img src="image/widget.png" width="270" height="200"> -->
     </a>
     <div class="formWrap">
       <form action="#murphy" id='foo'>
           <div class="form-group">
               <p>
-                  <label>Name</label>
-                  <input id='name' name='name' type='text'>
+                  <input id='name' name='name' type='text' placeholder="name">
               </p><p>
-              <label>Email</label>
-              <input id='email' name='email' type='email'>
+              <input id='email' name='email' type='email' placeholder="email">
           </p><p>
-          <label>Number</label>
-          <input id='phone' name='phone' type='tel'>
+          <input id='phone' name='phone' type='tel' placeholder="phone number">
       </p><p>
 <!-- <label>Message</label>
     <textarea id='message' name='message' rows='5'></textarea> -->
