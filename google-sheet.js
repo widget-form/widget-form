@@ -26,10 +26,10 @@ $("#foo").submit(function(event){
     request = $.ajax({
         url: "https://script.google.com/macros/s/AKfycbwm789ODrLQ_pBojkW3e3AWPWs_9vMHboOSoYsn8tPiwPsCVfs/exec",
         type: "post",
-        dataType: 'jsonp',
+        dataType: 'json',
         data: serializedData
     });
-    request = jQuery.ajax(payload)
+    // request = jQuery.ajax(payload)
 
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
@@ -38,6 +38,7 @@ $("#foo").submit(function(event){
         console.log(response);
         console.log(textStatus);
         console.log(jqXHR);
+        alert("?");
     });
 
     // Callback handler that will be called on failure
