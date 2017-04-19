@@ -34,10 +34,12 @@ $("#foo").submit(function(event){
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
         // Log a message to the console
-        console.log("Hooray, it worked!");
-        console.log(response);
-        console.log(textStatus);
-        console.log(jqXHR);
+        // console.log("Hooray, it worked!");
+        // console.log(response);
+        // console.log(textStatus);
+        // console.log(jqXHR);
+        $('.form-group').hide();
+        $('.success').show();
     });
 
     // Callback handler that will be called on failure
